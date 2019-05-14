@@ -1,10 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt",
+	"sort"
+)
 
 func Barcharts() {
 	var x = "|"
-	y = {1,4,5,6,8,2}
+	y := []int{1,4,5,6,8,2}
 	for index, x := range y {
 		fmt.print("$x")
 	}
@@ -12,18 +15,18 @@ func Barcharts() {
 
 func Sort(){
 	var x = "|"
-	y = {1,4,5,6,8,2}
+	y := []int{1,4,5,6,8,2}
 	for index, x := range y{
-		fmt.print("%x")
+		fmt.println("%x")
 	}
-	x.sort ASCENDING //ascending sorting
+	sort(x) //ascending sorting
 }
 
 func Sort2() {
 	var x = "|"
 	y = {1,4,5,6,8,2}
 	for index, x := range y
-		fmt.print("%x")
+		fmt.println("%x")
 	}
-	x.sort DESCENDING
+	sort.Reverse(x)
 }

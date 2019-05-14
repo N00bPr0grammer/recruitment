@@ -37,4 +37,3 @@ func main() {
     defer csvdatafile.Close()
 
     writer := csv.NewWriter(csvdatafile)
-}

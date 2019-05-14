@@ -20,7 +20,7 @@ func get_api(url string) []byte {
         panic(err)
     }
     return body
-}v
+}
 
 func main() {
 

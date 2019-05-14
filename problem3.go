@@ -2,6 +2,7 @@ package compare
 
 import "fmt"
 
+//comparing modified change
 func Compare() {
 	command := "source" + "target"
 

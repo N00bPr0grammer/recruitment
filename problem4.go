@@ -29,7 +29,7 @@ func main() {
     for k, v := range res {
         fmt.Printf("%s=%#v\n", k, v)
     }
-    csvdatafile, err := os.Create("./Kota.csv", k) //converting data to csv
+    csvdatafile, err := os.Create("./Kota.csv") //converting data to csv
 
     if err != nil {
        fmt.Println(err)

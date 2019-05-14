@@ -8,7 +8,8 @@ type interface struct {
   num int
 }
 
-const MAX_QUEUE_SIZE = 16
+const MAX_QUEUE_SIZE = 16 //fixed size
+
 type Queue struct {
   push key interface{}
   pop interface{}

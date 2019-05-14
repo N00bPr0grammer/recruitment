@@ -9,6 +9,7 @@ import (
 	"encoding/csv"
 )
 
+//get api
 func get_api(url string) []byte {
     resp, err := http.Get(url)
     if err != nil {
@@ -23,13 +24,12 @@ func get_api(url string) []byte {
 }
 
 func main() {
-
     res := map[string][]string{}
     json.Unmarshal(get_api("https://data.go.id/dataset/museum-indonesia"), &res)
     for k, v := range res {
         fmt.Printf("%s=%#v\n", k, v)
     }
-    csvdatafile, err := os.Create("./Kota.csv", k)
+    csvdatafile, err := os.Create("./Kota.csv", k) //converting data to csv
 
     if err != nil {
        fmt.Println(err)

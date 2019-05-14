@@ -5,6 +5,7 @@ import (
 	"sort"
 )
 
+//barcharts
 func Barcharts() {
 	var x = "|"
 	y := []int{1,4,5,6,8,2}
@@ -13,15 +14,17 @@ func Barcharts() {
 	}
 }
 
+//ascending sorting
 func Sort(){
 	var x = "|"
 	y := []int{1,4,5,6,8,2}
 	for index, x := range y{
 		fmt.println("%x")
 	}
-	sort(x) //ascending sorting
+	sort(x)
 }
 
+//reverse sorting
 func Sort2() {
 	var x = "|"
 	y = {1,4,5,6,8,2}

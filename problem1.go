@@ -1,7 +1,7 @@
 package sort
 
 import (
-	"fmt",
+	"fmt"
 	"sort"
 )
 
@@ -10,26 +10,27 @@ func Barcharts() {
 	var x = "|"
 	y := []int{1,4,5,6,8,2}
 	for index, x := range y {
-		fmt.print("$x")
+		fmt.Println("%x")
 	}
+	return
 }
 
 //ascending sorting
 func Sort(){
 	var x = "|"
 	y := []int{1,4,5,6,8,2}
-	for index, x := range y{
-		fmt.println("%x")
+	for index, x := range y {
+		fmt.Println("%x")
 	}
-	sort(x)
+	return sort(x)
 }
 
 //reverse sorting
 func Sort2() {
 	var x = "|"
-	y = {1,4,5,6,8,2}
-	for index, x := range y
-		fmt.println("%x")
+	y := []int{1,4,5,6,8,2}
+	for index, x := range y {
+		fmt.Println("%x")
 	}
-	sort.Reverse(x)
+	return sort.Reverse(y)
 }

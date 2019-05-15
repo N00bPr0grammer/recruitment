@@ -1,9 +1,5 @@
 package queue
 
-type Queue struct {
-
-}
-
 type interface struct {
   num int
 }

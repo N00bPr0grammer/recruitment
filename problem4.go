@@ -1,16 +1,12 @@
 package concurrency
 
 import (
-	"fmt"
-    	"io/ioutil"
-    	"log"
-    	"net/http"
-   	"os"
-	"encoding/csv"
+    "io/ioutil"
+    "net/http"
 )
 
 //get api
-func get_api(url string) []byte {
+func GetApi(url string) []byte {
     resp, err := http.Get(url)
     if err != nil {
         panic(err)
@@ -22,18 +18,3 @@ func get_api(url string) []byte {
     }
     return body
 }
-
-func main() {
-    res := map[string][]string{}
-    json.Unmarshal(get_api("https://data.go.id/dataset/museum-indonesia"), &res)
-    for k, v := range res {
-        fmt.Printf("%s=%#v\n", k, v)
-    }
-    csvdatafile, err := os.Create("./Kota.csv") //converting data to csv
-
-    if err != nil {
-       fmt.Println(err)
-    }
-    defer csvdatafile.Close()
-
-    writer := csv.NewWriter(csvdatafile)
